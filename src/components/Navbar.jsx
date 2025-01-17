@@ -45,8 +45,6 @@ const Navbar = () => {
             <FaGlobe />
           </div>
 
-
-
           <button type="button" className="w-[155px] h-[60px] bg-primary text-white px-4 py-2 rounded-md hover:bg-teal-900 transition">
             {isEnglish ? 'Contact Us' : 'اتصل بنا'}
           </button>
