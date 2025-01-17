@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -10,7 +11,7 @@ function NextArrow(props) {
       style={{ ...style, display: "block", width: "48px", height: "48px" }}
       onClick={onClick}
     >
-      <img src="/src/assets/slider/next.png" alt="next" />
+      <img src={require("/src/assets/slider/next.png")} alt="next" />
     </div>
   );
 }
@@ -23,10 +24,11 @@ function PrevArrow(props) {
       style={{ ...style, display: "block", width: "48px", height: "48px" }}
       onClick={onClick}
     >
-      <img src="/src/assets/slider/prev.png" alt="prev" />
+      <img src={require("/src/assets/slider/prev.png")} alt="prev" />
     </div>
   );
 }
+
 export default function SimpleSlider() {
   const slides = [
     {
@@ -34,42 +36,42 @@ export default function SimpleSlider() {
       description:
         "في ستوديو، نحرص على تصميم تجارب جذابة وبديهية. مصممة وفقًا لاحتياجاتك لجمهورك مع إعلانات ذات محتوى خاص يعكس علامتك التجارية.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item1.png",
+      image: require("/src/assets/slider/item1.png"),
     },
     {
       title: "تطوير تطبيقات الجوال",
       description:
         "نقدم تطبيقات موبايل مبتكرة لتطوير العلامات التجارية. حلول رقمية بالأبداع والكفاءة والتأثير.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item2.png",
+      image: require("/src/assets/slider/item2.png"),
     },
     {
       title: "تطوير المواقع الإلكترونية",
       description:
         "الاعتماد على تقنيات حديثة يعني استخدامنا من دربنا لتحويل الأفكار إلى واقع جمالي وتجربة ناجحة.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item3.png",
+      image: require("/src/assets/slider/item3.png"),
     },
     {
       title: "تصميم يركز على المستخدم",
       description:
         "في ستوديو، نحرص على تصميم تجارب جذابة وبديهية. مصممة وفقًا لاحتياجاتك لجمهورك مع إعلانات ذات محتوى خاص يعكس علامتك التجارية.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item1.png",
+      image: require("/src/assets/slider/item1.png"),
     },
     {
       title: "تطوير تطبيقات الجوال",
       description:
         "نقدم تطبيقات موبايل مبتكرة لتطوير العلامات التجارية. حلول رقمية بالأبداع والكفاءة والتأثير.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item2.png",
+      image: require("/src/assets/slider/item2.png"),
     },
     {
       title: "تطوير المواقع الإلكترونية",
       description:
         "الاعتماد على تقنيات حديثة يعني استخدامنا من دربنا لتحويل الأفكار إلى واقع جمالي وتجربة ناجحة.",
       buttonText: "اعرف المزيد →",
-      image: "/src/assets/slider/item3.png",
+      image: require("/src/assets/slider/item3.png"),
     },
   ];
 
