@@ -38,10 +38,10 @@ const Future = () => {
 
 
                 <div className='flex w-full justify-between'>
-                    <button  type="button" className="w-full max-w-[324px] px-[16px] py-[24px] rounded-[10px] border border-[#295F70] bg-white hover:bg-[#295F70] hover:text-white transition-colors duration-300 text-primary text-center font-semibold  text-[24px] font-[Montserrat]">
+                    <button  type="button" className="w-full max-w-[324px] px-[16px] py-[24px] rounded-[10px] border border-[#295F70] bg-white hover:bg-[#295F70] hover:text-white transition-colors duration-300 text-primary text-center font-semibold  text-[24px] font-[Montserrat] cursor-default">
                         Software Solutions
                     </button>
-                    <button  type="button" className="w-full max-w-[324px] px-[16px] py-[24px] rounded-[10px] border border-[#295F70] bg-white hover:bg-[#295F70] hover:text-white transition-colors duration-300 text-primary text-center font-semibold  text-[24px] font-[Montserrat]">
+                    <button  type="button" className="w-full max-w-[324px] px-[16px] py-[24px] rounded-[10px] border border-[#295F70] bg-white hover:bg-[#295F70] hover:text-white transition-colors duration-300 text-primary text-center font-semibold  text-[24px] font-[Montserrat] cursor-default">
                         Marketing Solutions
                     </button>
                 </div>

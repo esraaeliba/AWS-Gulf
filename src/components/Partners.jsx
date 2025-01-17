@@ -33,7 +33,6 @@ const Partners = () => {
                         ref={scrollRef}
                         className="flex gap-2 animate-scroll whitespace-nowrap"
                     >
-                        {/* Original Images */}
                         {[
                             "/src/assets/partners/cisco.png",
                             "/src/assets/partners/lenovo.png",
@@ -50,7 +49,7 @@ const Partners = () => {
                             />
                         ))}
 
-                        {/* Duplicate Images for Smooth Infinite Scroll */}
+                        {/* Duplicate Images*/}
                         {[
                             "/src/assets/partners/cisco.png",
                             "/src/assets/partners/lenovo.png",

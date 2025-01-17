@@ -33,20 +33,20 @@ const Navbar = () => {
         </div>
 
         <div className='flex gap-10'>
+        
           <div className="flex items-center space-x-2 cursor-pointer" onClick={toggleLanguage}>
-
-            <label className="relative inline-flex items-center cursor-pointer">
-              <span className="ml-2 text-sm">{isEnglish ? 'English' : 'العربية'}</span>
-              <FaGlobe />
+            <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+              <input type="checkbox" id="toggle" checked={!isEnglish} onChange={toggleLanguage} className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+              <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+            </div>
+            <label htmlFor="toggle" className="text-gray-700 cursor-pointer">
+              {isEnglish ? 'English' : 'العربية'}
             </label>
-
-            <label for="toggle-example" class="flex items-center cursor-pointer relative mb-4" dir='ltr'>
-            <input type="checkbox" id="toggle-example" class="sr-only" />
-            <div class="toggle-bg bg-gray-200 border-2 border-gray-200 h-6 w-11 rounded-full"></div>
-            </label>
+            <FaGlobe />
           </div>
 
-   
+
+
           <button type="button" className="w-[155px] h-[60px] bg-primary text-white px-4 py-2 rounded-md hover:bg-teal-900 transition">
             {isEnglish ? 'Contact Us' : 'اتصل بنا'}
           </button>

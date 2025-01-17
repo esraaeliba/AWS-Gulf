@@ -20,3 +20,9 @@ body{
   font-weight: 400;
   line-height: 24px;
 }
+.toggle-checkbox:checked {
+  border-color: #3183ff;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #3183ff;
+}
