@@ -13,7 +13,7 @@ const AWSGulf = () => {
     }, []);
 
     return (
-        <div className='flex w-full bg-white p-12 mb-52'>
+        <div className='flex sm:flex-col lg:flex-row sm:gap-16 sm:items-center xl:gap-0 w-full bg-white p-12 mb-52'>
             <div className='w-full max-w-[438px] h-[655px] rounded-[10px] bg-[#EAF5F6] flex justify-center items-center mx-28'>
                 <p className="text-[#478B9C] text-center font-[Montserrat] text-[64px] font-bold leading-[100px] transition-opacity duration-500">
                     {words[currentIndex]}

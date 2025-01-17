@@ -9,7 +9,7 @@ import main from '/src/assets/main.png';
 
 const Future = () => {
     return (
-        <div className="flex py-[60px] px-12">
+        <div className="flex sm:flex-col lg:flex-row py-[60px] px-12">
             <div className='flex flex-col w-full max-w-[551px] gap-8'>
 
                 <div className="flex flex-col gap-[24px] h-80">
