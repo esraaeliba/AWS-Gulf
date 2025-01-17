@@ -98,7 +98,7 @@ export default function SimpleSlider() {
         {slides.map((slide, index) => (
           <div key={index}>
             <div
-              className={`slide-item flex flex-col items-center py-2 px-4 mx-[24px] gap-4 justify-between h-full border border-gray-200 rounded-lg`}
+              className={`slide-item h-[510px] flex flex-col items-center py-2 px-4 mx-[24px] gap-4 justify-between border border-gray-200 rounded-lg`}
             >
               <img
                 src={slide.image}
