@@ -1,5 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
+// Import images
+import cisco from "/src/assets/partners/cisco.png";
+import lenovo from "/src/assets/partners/lenovo.png";
+import dell from "/src/assets/partners/dell.png";
+import peplink from "/src/assets/partners/peplink.png";
+import kaspersky from "/src/assets/partners/Kaspersky.png";
+import microsoft from "/src/assets/partners/microsoft.png";
+
 const Partners = () => {
     const scrollRef = useRef(null);
 
@@ -22,6 +30,8 @@ const Partners = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const images = [cisco, lenovo, dell, peplink, kaspersky, microsoft];
+
     return (
         <div className="border-t border-b border-gray-300 bg-white flex w-full p-[60px_48px] items-center gap-4 shadow-[0px_4px_45px_0px_rgba(0,0,0,0.05)]">
             <p className="w-1/2 text-primary text-right font-montserrat text-[32px] font-bold leading-normal  flex-shrink-0">
@@ -33,14 +43,8 @@ const Partners = () => {
                         ref={scrollRef}
                         className="flex gap-2 animate-scroll whitespace-nowrap"
                     >
-                        {[
-                            "/src/assets/partners/cisco.png",
-                            "/src/assets/partners/lenovo.png",
-                            "/src/assets/partners/dell.png",
-                            "/src/assets/partners/peplink.png",
-                            "/src/assets/partners/Kaspersky.png",
-                            "/src/assets/partners/microsoft.png",
-                        ].map((src, index) => (
+                        {/* Original Images */}
+                        {images.map((src, index) => (
                             <img
                                 key={index}
                                 src={src}
@@ -49,15 +53,8 @@ const Partners = () => {
                             />
                         ))}
 
-                        {/* Duplicate Images*/}
-                        {[
-                            "/src/assets/partners/cisco.png",
-                            "/src/assets/partners/lenovo.png",
-                            "/src/assets/partners/dell.png",
-                            "/src/assets/partners/peplink.png",
-                            "/src/assets/partners/Kaspersky.png",
-                            "/src/assets/partners/microsoft.png",
-                        ].map((src, index) => (
+                        {/* Duplicate Images for Smooth Infinite Scroll */}
+                        {images.map((src, index) => (
                             <img
                                 key={`duplicate-${index}`}
                                 src={src}
@@ -67,7 +64,6 @@ const Partners = () => {
                         ))}
                     </div>
                 </div>
-
             </div>
         </div>
     );
