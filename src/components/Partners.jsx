@@ -5,7 +5,7 @@ import cisco from "/src/assets/partners/cisco.png";
 import lenovo from "/src/assets/partners/lenovo.png";
 import dell from "/src/assets/partners/dell.png";
 import peplink from "/src/assets/partners/peplink.png";
-import kaspersky from "/src/assets/partners/Kaspersky.png";
+import kaspersky from "/src/assets/partners/kaspersky.png";
 import microsoft from "/src/assets/partners/microsoft.png";
 
 const Partners = () => {
