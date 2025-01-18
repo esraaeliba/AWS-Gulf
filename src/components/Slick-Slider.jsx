@@ -93,7 +93,9 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="px-12 w-full py-8">
+  
+  <>
+   <div className="px-12 w-full py-8">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index}>
@@ -120,6 +122,12 @@ export default function SimpleSlider() {
           </div>
         ))}
       </Slider>
+
     </div>
+
+    <a href='' className='text-primary font-cairo text-[20px] font-semibold leading-[30px] underline underline-offset-auto decoration-solid px-12 py-8'> أستكشف خدماتنا</a>
+
+  </>
+   
   );
 }
