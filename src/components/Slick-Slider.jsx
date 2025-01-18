@@ -125,7 +125,7 @@ export default function SimpleSlider() {
 
     </div>
 
-    <a href='' className='text-primary font-cairo text-[20px] font-semibold leading-[30px] underline underline-offset-auto decoration-solid px-12 py-8'> أستكشف خدماتنا</a>
+    <a href='/' className='text-primary font-cairo text-[20px] font-semibold leading-[30px] underline underline-offset-auto decoration-solid px-12 py-8'> أستكشف خدماتنا</a>
 
   </>
    
